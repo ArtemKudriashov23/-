@@ -1,0 +1,25 @@
+# Compute 5*3 and 5*2
+result1 = 5 * 3
+result2 = 5 * 2
+
+print("5 * 3 =", result1)
+print("5 * 2 =", result2)
+
+def calculate_average(numbers):
+    if len(numbers) == 0:
+        return 0  # Return 0 if the list is empty to avoid division by zero
+    return sum(numbers) / len(numbers)
+
+# Example usage
+numbers = [5, 10, 15, 20, 25]
+average = calculate_average(numbers)
+print(f"The average of {numbers} is: {average}")
+
+# You can also use it with different sets of numbers
+test1 = [1, 2, 3, 4, 5]
+test2 = [10, 20, 30]
+
+print(f"The average of {test1} is: {calculate_average(test1)}")
+print(f"The average of {test2} is: {calculate_average(test2)}")
+
+print("Hello, World!")
